@@ -1,12 +1,12 @@
 import ReactDom from 'react-dom';
+import UserSearch from './state/UserSearch';
 
 const App = () => {
-  return <div>
-    <h1>Hi there!</h1>
-  </div>
+  return (
+    <div>
+      <UserSearch />
+    </div>
+  );
 };
 
-ReactDom.render(
-  <App />,
-  document.querySelector('#root')
-);
+ReactDom.render(<App />, document.querySelector('#root'));
